@@ -46,16 +46,14 @@ BBC: A comma separated list of email address that will receive a blind copy of t
 https://cyberkap.com.au
  
 .NOTES
-Author: John Kapaniris
+Author: CyberKap Pty Ltd
 Last Edit: 13/1/22
 
+Copyright 2022
+Released under the MIT Licence https://github.com/Kapmeister/PowerShell/blob/main/LICENSE
+
+
 Reference: Philippe Tschumi - https://techblog.ptschumi.ch/automation-scripting/powershell-clean-script/
- 
-.INPUTS
-None.
- 
-.OUTPUTS
-None.
  
 #>
 
