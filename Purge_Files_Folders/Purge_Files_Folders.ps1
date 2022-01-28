@@ -76,7 +76,7 @@ Param (
 )
 
 $Lines = Get-Content $settings
-$param=@()
+$param=@{}
 foreach ($Line in $Lines){
     $k = [regex]::split($Line,'=')
     if(($k[0].CompareTo("") -ne 0) -and ($k[0].StartsWith("[") -ne $True) -and ($k[0].StartsWith("#") -ne $True)) { 
@@ -173,7 +173,7 @@ function removeEmptyFolders {
 #>
 Function NotifyPurgeResult {
     # email configuration
-    If ($SendTo.Count + $BCC.Count -gt 0){
+    If ($SendTo.Length + $BCC.Length -gt 0){
         $smtp = new-object system.net.mail.smtpClient($SMTPServer)
         $mail = new-object System.Net.Mail.MailMessage
 
@@ -191,7 +191,7 @@ Function NotifyPurgeResult {
 
         If ($SendTo){
             $SendTo.Split(",") | ForEach-Object {
-            $mail.to.Add($_)
+                $mail.to.Add($_)
             }
         }
         If ($BCC){
