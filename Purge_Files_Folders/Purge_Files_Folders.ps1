@@ -3,7 +3,7 @@
 This Script will delete files with a predefined file spec from specific directories that are old than a specfied period. 
   
 .DESCRIPTION
-This Script is deleting files from specific directories.
+This Script is for deleting files from specific directories matching certain criteria. 
 You can specify the age of the files to be deleted and choose file types and directories.
   
 .PARAMETER Settings
@@ -21,7 +21,7 @@ BCC=
 
 [Genral]
 ReportOnly:
-- True: will generate a report and not actually delete any files or folders
+- True: will generate a report and not delete any files or folders
 - False: will delete the files & folders as per spec. 
 
 Input:
@@ -47,11 +47,10 @@ https://cyberkap.com.au
  
 .NOTES
 Author: CyberKap Pty Ltd
-Last Edit: 13/1/22
+Last Edit: 01/10/24
 
-Copyright 2022
+Copyright 2022-2024
 Released under the MIT Licence https://github.com/Kapmeister/PowerShell/blob/main/LICENSE
-
 
 Reference: Philippe Tschumi - https://techblog.ptschumi.ch/automation-scripting/powershell-clean-script/
  
