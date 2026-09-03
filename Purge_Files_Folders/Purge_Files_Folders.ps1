@@ -43,13 +43,13 @@ BBC: A comma separated list of email address that will receive a blind copy of t
     Parameters: -executionpolicy bypass -NoLogo -NonInteractive -WindowStyle Hidden -file "C:\Scripts\Purge_Files_Folders.ps1" -Settings C:\AutoPurge\Settings.ini
 
 .LINK
-https://cyberkap.com.au
+https://github.com/Kapmeister/PowerShell
  
 .NOTES
-Author: CyberKap Pty Ltd
-Last Edit: 01/10/24
+Author: Kapmeister
+Last Edit: 03/09/2026
 
-Copyright 2022-2024
+Copyright 2022-2026
 Released under the MIT Licence https://github.com/Kapmeister/PowerShell/blob/main/LICENSE
 
 Reference: Philippe Tschumi - https://techblog.ptschumi.ch/automation-scripting/powershell-clean-script/

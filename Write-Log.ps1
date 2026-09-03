@@ -10,7 +10,7 @@ function Write-Log {
 		[ValidateSet("Warning","Error","Info")]
 		[String] $Type = "Info"
     )
-    [string]$logMessage = [System.String]::Format("[$(Get-Date -Format "dd/MM/yyyy HH:mm:ss")] -"),$Type, $Text
+    $logMessage = "[$(Get-Date -Format 'dd/MM/yyyy HH:mm:ss')] - $Type - $Text"
     Add-Content -Path $LogFile -Value $logMessage
 }
 #
